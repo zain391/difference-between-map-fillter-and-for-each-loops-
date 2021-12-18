@@ -21,15 +21,33 @@ let checkFirst = arr1.forEach(item => {
 });
 // so it does not return anything
 console.log(checkFirst);
-
+console.clear();
 // now we will see the working of the map and fillter loops
 // the syntax of foreach map and filtter is same
 // they all works on arrays 
 // but they have some differences that we will see in a moment
+// console.clear();
+// let returingMap = arr1.map(item => {
+//     console.log("i am a map loop", item);
+//     return item;
+    // the map rerturns a new array with the lenght same as of the origional arrray
+// });
+// console.log(returingMap);
+
+// let returningFillter=arr1.filter(item => {
+    // the map rerturns a new array with the lenght same as of the origional arrray or less than the origional array
+//     console.log("i am a filter loop", item);
+//     return item;
+// })
+// console.log(returningFillter);
+
+// this was the first code
 console.clear();
 let returingMap = arr1.map(item => {
     console.log("i am a map loop", item);
-    return item;
+    if(item <3){
+        return item;
+    }
     // the map rerturns a new array with the lenght same as of the origional arrray
 });
 console.log(returingMap);
@@ -37,11 +55,12 @@ console.log(returingMap);
 let returningFillter=arr1.filter(item => {
     // the map rerturns a new array with the lenght same as of the origional arrray or less than the origional array
     console.log("i am a filter loop", item);
-    return item;
+    if(item <3){
+        return item;
+    }
 })
+
 console.log(returningFillter);
-
-
 
 
 
