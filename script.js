@@ -22,6 +22,18 @@ let checkFirst=arr1.forEach(item=>{
     // so it does not return anything
     console.log(checkFirst);
 
+    // now we will see the working of the map and fillter loops
+    // the syntax of foreach map and filtter is same
+    // they all works on arrays 
+    // but they have some differences that we will see in a moment
+
+    arr1.map(item =>{
+        console.log("i am a map loop",item);
+    })
+    
+    arr1.filter(item =>{
+        console.log("i am a filter loop",item);
+    })
 
 
 
