@@ -9,6 +9,28 @@ let arr1=[1,2,3,45,6,7,8,"zain","usama"];
 arr1.forEach(function(item){
 console.log("item by noraml function",item);
 })
-arr1.forEach(item=>{
-console.log("item by arrow function",item);
-})
+// arr1.forEach(item=>{
+// console.log("item by arrow function",item);
+// })
+
+
+// now we will see if for each returns something or not
+// for that we store it in a variable
+let checkFirst=arr1.forEach(item=>{
+    console.log("item by arrow function",item);
+    });
+    // so it does not return anything
+    console.log(checkFirst);
+
+
+
+
+
+
+
+
+
+
+
+
+
